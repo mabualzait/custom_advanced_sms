@@ -1,3 +1,30 @@
+## 1.2.1 - Bug Fix Release
+
+### Fixed
+- 🐛 **Missing Android Implementations**: Added all missing Kotlin implementation files
+- 🐛 **TelephonyManager Import**: Fixed `SimCardsProvider.kt` compilation errors
+- 🐛 **Missing Classes**: Created all referenced provider and handler classes
+- 🐛 **Android Manifest**: Fixed manifest parsing errors and permissions
+- 🐛 **Build Issues**: Resolved compilation failures for Android builds
+
+### Added
+- ✅ **SimCardsProvider**: Complete implementation with SIM card detection
+- ✅ **SmsReceiver**: Base implementation for SMS receiving functionality  
+- ✅ **SmsSender**: Base implementation for SMS sending functionality
+- ✅ **SmsQuery**: Base implementation for SMS querying functionality
+- ✅ **ContactQuery**: Base implementation for contact querying functionality
+- ✅ **SmsRemover**: Base implementation for SMS removal functionality
+- ✅ **UserProfileProvider**: Base implementation for user profile functionality
+- ✅ **Permissions**: Proper permission handling framework
+- ✅ **SmsStateHandler**: SMS state monitoring implementation
+
+### Technical Changes
+- Created complete Android native implementation structure
+- Added proper telephony and subscription manager imports
+- Fixed Android manifest with required SMS and phone permissions
+- Added proper error handling and security exception management
+- Implemented proper SIM card state detection (Unknown, Absent, PinRequired, PukRequired, Locked, Ready)
+
 ## 1.2.0 - Custom Advanced SMS Release
 
 ### Added

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abualzait.custom_advanced_sms">
+
+    <!-- SMS permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    
+    <!-- Phone state permissions for SIM card access -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <!-- Contact permissions -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

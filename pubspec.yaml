@@ -1,7 +1,7 @@
 name: sms_advanced_custom
 description: An advanced SMS library for Flutter with enhanced functionality. Allows sending, receiving,
   and querying SMS messages, SMS delivery status, and contact information on Android, with sending capabilities on iOS & Web.
-version: 1.2.0
+version: 1.2.1
 homepage: https://github.com/abualzait/custom_advanced_sms
 
 environment:
