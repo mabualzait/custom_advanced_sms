@@ -23,12 +23,28 @@ An advanced SMS library for Flutter with enhanced functionality and improved nam
 
 ## Installation
 
-Add this to your package's `pubspec.yaml` file:
+You can use this package directly from [pub.dev](https://pub.dev/packages/custom_advanced_sms):
+
+Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   custom_advanced_sms: ^1.2.0
 ```
+
+Then run:
+
+```bash
+flutter pub get
+```
+
+Import it in your Dart code:
+
+```dart
+import 'package:custom_advanced_sms/custom_advanced_sms.dart';
+```
+
+For more details, see the [pub.dev page](https://pub.dev/packages/custom_advanced_sms).
 
 ## Android Setup
 
