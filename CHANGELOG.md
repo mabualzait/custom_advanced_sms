@@ -25,6 +25,17 @@
 - Added proper error handling and security exception management
 - Implemented proper SIM card state detection (Unknown, Absent, PinRequired, PukRequired, Locked, Ready)
 
+### Other Recent Fixes
+- Fixed package validation errors for pub.dev publishing
+- Added LICENSE file (MIT)
+- Fixed import in `custom_advanced_sms.dart` to use relative path for `contact.dart`
+- Removed unnecessary import from `contact.dart`
+- Updated web implementation to use `package:web` instead of deprecated `dart:html`
+- Updated SMS sending on web to use `launchUrl` instead of deprecated `launch`
+- Added `web` dependency to `pubspec.yaml`
+- Ran `dart analyze` and fixed all issues
+- Package now passes `dart pub publish --dry-run` with 0 warnings
+
 ## 1.2.0 - Custom Advanced SMS Release
 
 ### Added

@@ -10,7 +10,8 @@
         "flutter",
         "flutter_web_plugins",
         "plugin_platform_interface",
-        "url_launcher"
+        "url_launcher",
+        "web"
       ],
       "devDependencies": [
         "flutter_lints",
@@ -51,6 +52,11 @@
         "vector_math",
         "vm_service"
       ]
+    },
+    {
+      "name": "web",
+      "version": "1.1.1",
+      "dependencies": []
     },
     {
       "name": "url_launcher",
@@ -321,11 +327,6 @@
     {
       "name": "sky_engine",
       "version": "0.0.0",
-      "dependencies": []
-    },
-    {
-      "name": "web",
-      "version": "1.1.1",
       "dependencies": []
     }
   ],

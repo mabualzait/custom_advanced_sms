@@ -1,11 +1,10 @@
 import 'dart:async';
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html' as html show window;
 
 import 'package:flutter/services.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:web/web.dart' as web;
 
 /// A web implementation of the CustomAdvancedSms plugin.
 class CustomAdvancedSmsPlugin extends PlatformInterface {
@@ -54,7 +53,8 @@ class CustomAdvancedSmsPlugin extends PlatformInterface {
   String get separator => isCupertino() ? "&" : "?";
   Future sendSMS(String address, String body) async {
     final _body = Uri.encodeComponent(body);
-    return launch('sms:$address${separator}body=$_body');
+    final uri = Uri.parse('sms:$address${separator}body=$_body');
+    return launchUrl(uri);
   }
 }
 
@@ -68,7 +68,7 @@ bool isCupertino() {
     'iPod',
     'Mac OS X',
   ];
-  final String _agent = html.window.navigator.userAgent;
+  final String _agent = web.window.navigator.userAgent;
   for (final device in _devices) {
     if (_agent.contains(device)) {
       return true;

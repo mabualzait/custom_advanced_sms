@@ -1,5 +1,13 @@
 # Custom Advanced SMS
 
+> **Recent Fixes (v1.2.1):**
+> - Package now passes all pub.dev validation checks
+> - Added MIT LICENSE file
+> - Fixed all import and dependency issues
+> - Updated web implementation to use modern APIs
+> - Minimum Android SDK is now 23
+> - See CHANGELOG for details
+
 An advanced SMS library for Flutter with enhanced functionality and improved namespace compliance. This library allows sending, receiving, and querying SMS messages, SMS delivery status, and contact information on Android, with sending capabilities on iOS & Web.
 
 ## Features
@@ -27,8 +35,10 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  custom_advanced_sms: ^1.2.0
+  custom_advanced_sms: ^1.2.1
 ```
+
+> **Note:** Minimum Android SDK version is 23. The package includes a LICENSE file (MIT).
 
 ## Android Setup
 
@@ -203,6 +213,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Changelog
+
+### 1.2.1
+- Package now passes all pub.dev validation checks
+- Added MIT LICENSE file
+- Fixed all import and dependency issues
+- Updated web implementation to use modern APIs
+- Minimum Android SDK is now 23
 
 ### 1.2.0
 - Updated namespace to comply with new Android requirements
